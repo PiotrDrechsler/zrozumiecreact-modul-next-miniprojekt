@@ -7,7 +7,7 @@ import { Footer } from "../Footer/Footer";
 import { MainContent } from "../MainContent/MainContent";
 import { CurrencySelector } from "../CurrencySelector/CurrencySelector";
 
-export function Layout() {
+export function Layout({ children }) {
     return (
         <>
             <MainContent>
@@ -20,6 +20,7 @@ export function Layout() {
                     </div>
                 </TopBar>
                 <CategoriesMenu />
+                {children}
             </MainContent>
             <Footer />
         </>
