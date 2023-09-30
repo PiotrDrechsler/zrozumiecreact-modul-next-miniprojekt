@@ -1,8 +1,12 @@
+"use client";
+
+import { useContext } from "react";
 import { CURRENCIES, CURRENCY_SIGN } from "../../constants/currencies";
 import styles from "./Product.module.css";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 
 export function Product({ product }) {
-    const currency = CURRENCIES.PLN;
+    const [currency] = useContext(CurrencyContext);
     return (
         <>
             <div className={styles.productCard}>
