@@ -1,15 +1,15 @@
 const GENDERS = [
     {
         categoryName: "Mężczyzna",
-        path: "mezczyzna",
+        path: "/mezczyzna",
     },
     {
         categoryName: "Kobieta",
-        path: "kobieta",
+        path: "/kobieta",
     },
     {
         categoryName: "Dziecko",
-        path: "dziecko",
+        path: "/dziecko",
     },
 ];
 
