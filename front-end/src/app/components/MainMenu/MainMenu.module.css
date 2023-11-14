@@ -13,6 +13,6 @@
 }
 
 .mainMenu a:global(.active) {
-    color: var(--color-text-default);
-    border-bottom: 3px solid var(--color-text-default);
+    color: var(--color-default);
+    border-bottom: 3px solid var(--color-default);
 }
