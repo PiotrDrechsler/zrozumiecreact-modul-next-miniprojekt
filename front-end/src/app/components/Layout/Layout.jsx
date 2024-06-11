@@ -7,21 +7,22 @@ import { Footer } from "../Footer/Footer";
 import { MainContent } from "../MainContent/MainContent";
 import { CurrencySelector } from "../CurrencySelector/CurrencySelector";
 
-export function Layout() {
-    return (
-        <>
-            <MainContent>
-                <TopBar>
-                    <MainMenu />
-                    <Logo />
-                    <div>
-                        <CurrencySelector />
-                        <IconMenu />
-                    </div>
-                </TopBar>
-                <CategoriesMenu />
-            </MainContent>
-            <Footer />
-        </>
-    );
+export function Layout({ children }) {
+  return (
+    <>
+      <MainContent>
+        <TopBar>
+          <MainMenu />
+          <Logo />
+          <div>
+            <CurrencySelector />
+            <IconMenu />
+          </div>
+        </TopBar>
+        <CategoriesMenu />
+        {children}
+      </MainContent>
+      <Footer />
+    </>
+  );
 }
