@@ -1,10 +1,16 @@
 import { Hero } from "../../components/Hero/Hero";
 import { Bestsellers } from "../../components/Bestsellers/Bestsellers";
 
-export async function MainPage() {
-  const data = await fetch(`http://localhost:3000/children`).then((result) =>
-    result.json()
-  );
+const PARAMS_MAPPING = {
+  mezczyzna: "men",
+  kobieta: "women",
+  dziecko: "children",
+};
+
+export async function MainPage({ gender = "mezczyzna" }) {
+  const data = await fetch(
+    `http://localhost:3000/${PARAMS_MAPPING[gender]}`
+  ).then((result) => result.json());
 
   return (
     <>
