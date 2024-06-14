@@ -6,7 +6,7 @@ import styles from "./Hero.module.css";
 export function Hero({ heroImage }) {
   return (
     <div className={styles.summerSaleCoverImage}>
-      <Image src={heroImage} fill={true} />
+      <Image src={heroImage} layout="fill" objectFit="cover" />
       <div className={styles.heroContainer}>
         <div className={styles.summerSalePrompt}>
           <div>
