@@ -1,5 +1,6 @@
 "use client";
 import { useContext } from "react";
+import Image from "next/image";
 
 import { CURRENCIES, CURRENCY_SIGN } from "../../constants/currencies";
 import styles from "./Product.module.css";
@@ -10,7 +11,7 @@ export function Product({ product }) {
   return (
     <>
       <div className={styles.productCard}>
-        <img src={product.photos[0]} />
+        <Image src={product.photos[0]} width="250" height="400" />
 
         <button>
           <div className={styles.favourite}></div>
